@@ -1,0 +1,53 @@
+name: CI
+
+on:
+    push:
+        branches:
+            - main
+            - next
+    pull_request:
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        container: node:22
+        steps:
+            - uses: actions/checkout@v4
+
+            - run: npm i
+            - run: npm run lint
+            - run: npm run format
+
+    playwright:
+        runs-on: ubuntu-latest
+        container: mcr.microsoft.com/playwright:v1.50.0-jammy
+        env:
+            HOME: /root
+        permissions:
+            contents: read
+            pull-requests: write
+        steps:
+            - uses: actions/checkout@v4
+
+            - run: npm i
+            - run: npm run test:coverage
+
+            - name: Code Coverage Report
+              uses: irongut/CodeCoverageSummary@v1.3.0
+              with:
+                  filename: coverage/cobertura-coverage.xml
+                  badge: true
+                  fail_below_min: true
+                  format: markdown
+                  hide_branch_rate: false
+                  hide_complexity: true
+                  indicators: true
+                  output: both
+                  thresholds: '60 80'
+
+            - name: Add Coverage PR Comment
+              uses: marocchino/sticky-pull-request-comment@v2
+              if: github.event_name == 'pull_request'
+              with:
+                  recreate: true
+                  path: code-coverage-results.md
