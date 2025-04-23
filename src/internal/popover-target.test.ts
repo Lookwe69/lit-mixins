@@ -1,8 +1,8 @@
 import { LitElement } from 'lit';
 
-import { elementUpdated, expect } from '@open-wc/testing';
+import { expect } from '@open-wc/testing';
 
-import { mixinPopoverTarget } from './popover-target';
+import { mixinPopoverTarget } from './popover-target.js';
 
 describe('mixinPopoverTarget', () => {
 	let id = 0;

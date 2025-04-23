@@ -1,5 +1,8 @@
 {
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
-	"editor.formatOnPaste": false
+	"editor.formatOnPaste": false,
+	"prettier.configPath": "prettier.config.js",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.preferences.importModuleSpecifierEnding": "js"
 }
