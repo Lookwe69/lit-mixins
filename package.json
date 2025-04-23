@@ -61,7 +61,7 @@
 		"tslib": "^2.8.0"
 	},
 	"devDependencies": {
-		"@homer0/prettier-plugin-jsdoc": "^9.1.0",
+		"@homer0/prettier-plugin-jsdoc": "^10.0.0",
 		"@ianvs/prettier-plugin-sort-imports": "^4.4.1",
 		"@open-wc/testing": "^4.0.0",
 		"@rollup/plugin-node-resolve": "^16.0.0",
