@@ -1,8 +1,7 @@
 import { LitElement, PropertyDeclaration } from 'lit';
 import { property } from 'lit/decorators.js';
 
-import { stringConverter } from '@lookwe/lit-converters';
-import { MixinBase, MixinReturn } from '@lookwe/utils';
+import { MixinBase, MixinReturn } from '@lookwe/utils/types';
 
 import { internals, WithElementInternals } from './element-internals.js';
 
@@ -191,7 +190,7 @@ export function mixinFormAssociated<T extends MixinBase<LitElement & WithElement
 			return this[internals].labels;
 		}
 
-		@property({ reflect: true, converter: stringConverter })
+		@property({ reflect: true, useDefault: true })
 		accessor name: string = '';
 
 		@property({ type: Boolean })

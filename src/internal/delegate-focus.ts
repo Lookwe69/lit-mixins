@@ -1,6 +1,6 @@
 import { ReactiveElement } from 'lit';
 
-import { MixinBase, MixinReturn } from '@lookwe/utils';
+import { MixinBase, MixinReturn } from '@lookwe/utils/types';
 
 /**
  * A unique symbol to retrieve the focus element.

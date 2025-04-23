@@ -2,7 +2,7 @@ import { LitElement } from 'lit';
 
 import { expect } from '@open-wc/testing';
 
-import { internals, mixinElementInternals } from './element-internals';
+import { internals, mixinElementInternals } from './element-internals.js';
 
 describe('mixinElementInternals', () => {
 	let id = 0;

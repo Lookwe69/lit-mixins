@@ -1,8 +1,7 @@
 import { ReactiveElement } from 'lit';
 import { property } from 'lit/decorators.js';
 
-import { stringConverter } from '@lookwe/lit-converters';
-import { MixinBase, MixinReturn } from '@lookwe/utils';
+import { MixinBase, MixinReturn } from '@lookwe/utils/types';
 
 /**
  * An instance with all the useful properties to use the [Popover
@@ -52,7 +51,7 @@ export interface WithPopoverTarget {
  */
 export function mixinPopoverTarget<T extends MixinBase<ReactiveElement>>(base: T): MixinReturn<T, WithPopoverTarget> {
 	abstract class WithPopoverTargetElement extends base implements WithPopoverTarget {
-		@property({ reflect: true, attribute: 'popovertarget', converter: stringConverter })
+		@property({ reflect: true, attribute: 'popovertarget', useDefault: true })
 		accessor popoverTarget: string = '';
 
 		#popoverTargetElement: Element | null = null;

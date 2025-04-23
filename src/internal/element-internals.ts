@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 
-import { MixinBase, MixinReturn } from '@lookwe/utils';
+import { MixinBase, MixinReturn } from '@lookwe/utils/types';
 
 /**
  * A unique symbol used for protected access to an instance's `ElementInternals`.

@@ -24,7 +24,7 @@
 		"lint": "npm run lint:eslint && npm run lint:ts",
 		"lint:eslint": "eslint 'src/**/*.ts'",
 		"lint:ts": "tsc --noEmit",
-		"format": "prettier --check --ignore-path .gitignore --ignore-path .prettierignore .",
+		"format": "prettier --check --ignore-path .gitignore .",
 		"format:fix": "npm run format -- --write && npm run format -- --write --plugin=@homer0/prettier-plugin-jsdoc",
 		"test": "npm run build && wtr && MODE=prod wtr",
 		"test:dev": "npm run build && wtr",
@@ -55,7 +55,6 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@lookwe/lit-converters": "^1.0.1",
 		"@lookwe/utils": "^1.1.2",
 		"lit": "^3.3.0",
 		"tslib": "^2.8.1"
@@ -67,6 +66,7 @@
 		"@rollup/plugin-node-resolve": "^16.0.1",
 		"@rollup/plugin-replace": "^6.0.2",
 		"@rollup/plugin-typescript": "^12.1.2",
+		"@tsconfig/strictest": "^2.0.5",
 		"@types/mocha": "^10.0.10",
 		"@web/dev-server-rollup": "^0.6.4",
 		"@web/test-runner": "^0.20.1",
