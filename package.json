@@ -56,30 +56,30 @@
 	},
 	"dependencies": {
 		"@lookwe/utils": "^1.1.2",
-		"lit": "^3.3.0",
+		"lit": "^3.3.1",
 		"tslib": "^2.8.1"
 	},
 	"devDependencies": {
 		"@homer0/prettier-plugin-jsdoc": "^10.0.0",
-		"@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+		"@ianvs/prettier-plugin-sort-imports": "^4.5.1",
 		"@open-wc/testing": "^4.0.0",
 		"@rollup/plugin-node-resolve": "^16.0.1",
 		"@rollup/plugin-replace": "^6.0.2",
-		"@rollup/plugin-typescript": "^12.1.2",
+		"@rollup/plugin-typescript": "^12.1.4",
 		"@tsconfig/strictest": "^2.0.5",
 		"@types/mocha": "^10.0.10",
 		"@web/dev-server-rollup": "^0.6.4",
-		"@web/test-runner": "^0.20.1",
+		"@web/test-runner": "^0.20.2",
 		"@web/test-runner-commands": "^0.9.0",
-		"@web/test-runner-playwright": "^0.11.0",
-		"eslint": "^9.25.1",
-		"globals": "^16.0.0",
-		"prettier": "^3.5.3",
-		"rollup": "^4.40.0",
+		"@web/test-runner-playwright": "^0.11.1",
+		"eslint": "^9.32.0",
+		"globals": "^16.3.0",
+		"prettier": "^3.6.2",
+		"rollup": "^4.46.2",
 		"rollup-plugin-multi-input": "^1.5.0",
-		"semantic-release": "^24.2.3",
+		"semantic-release": "^24.2.7",
 		"sinon": "^21.0.0",
 		"typescript": "^5.8.3",
-		"typescript-eslint": "^8.31.0"
+		"typescript-eslint": "^8.38.0"
 	}
 }
