@@ -20,7 +20,7 @@ jobs:
 
     playwright:
         runs-on: ubuntu-latest
-        container: mcr.microsoft.com/playwright:v1.54.1
+        container: mcr.microsoft.com/playwright:v1.54.2
         env:
             HOME: /root
         permissions:
